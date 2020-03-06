@@ -1,0 +1,14 @@
+on: [push]
+
+jobs:
+  hello_world_job:
+    runs-on: ubuntu-latest
+    name: A job to build ci
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: nix build ci step
+        uses: port3000/nix-ci-action@v0.0.1
+        with:
+          CI_NAME: 'ci'
+        id: nixci
