@@ -11,7 +11,7 @@ This action run Continuous Integration for nix project
 ## Example usage
 
 ```
-uses: port3000/nix-ci-action@v1
+uses: port3000/nix-ci-action@v0.0.1
 with:
   CI_NAME: 'PaymentServiceCI'
 ```
