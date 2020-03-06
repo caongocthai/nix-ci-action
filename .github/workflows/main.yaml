@@ -8,7 +8,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: nix build ci step
-        uses: port3000/nix-ci-action@v0.0.1
+        uses: port3000/nix-ci-action@v0.0.2
         with:
           CI_NAME: 'ci'
+          NIX_PATH: './example'
         id: nixci
