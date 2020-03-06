@@ -4,20 +4,14 @@ This action run Continuous Integration for nix project
 
 ## Inputs
 
-### `who-to-greet`
+### `CI_NAME`
 
-**Required** The name of the person to greet. Default `"World"`.
-
-## Outputs
-
-### `time`
-
-The time we greeted you.
+**Required** The name of the CI derivation. Default `"ci"`.
 
 ## Example usage
 
 ```
-uses: actions/hello-world-docker-action@v1
+uses: port3000/nix-ci-action@v1
 with:
-  who-to-greet: 'Mona the Octocat'
+  CI_NAME: 'PaymentServiceCI'
 ```

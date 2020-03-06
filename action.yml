@@ -1,0 +1,13 @@
+# action.yml
+name: 'nixci'
+description: 'Build ci derivation with nix'
+inputs:
+  CI_NAME:  # id of input
+    description: 'Name of the ci derivation'
+    required: true
+    default: 'ci'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.CI_NAME }}
