@@ -11,4 +11,5 @@ jobs:
         uses: port3000/nix-ci-action@v0.0.1
         with:
           CI_NAME: 'ci'
+          NIX_PATH: './example'
         id: nixci

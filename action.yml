@@ -6,6 +6,10 @@ inputs:
     description: 'Name of the ci derivation'
     required: true
     default: 'ci'
+  NIX_PATH:  # id of input
+    description: 'Path to the default.nix file'
+    required: true
+    default: '.'
 runs:
   using: 'docker'
   image: 'Dockerfile'

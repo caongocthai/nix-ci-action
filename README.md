@@ -8,6 +8,10 @@ This action run Continuous Integration for nix project
 
 **Required** The name of the CI derivation. Default `"ci"`.
 
+### `NIX_PATH`
+
+**Required** The path to the default.nix file. Default `"."`.
+
 ## Example usage
 
 ```
